@@ -4,6 +4,9 @@ import lombok.Data;
 
 import java.util.Date;
 import java.util.List;
+
+import com.floydrise.tacocloud.tacos.IngredientRef;
+
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
 
@@ -18,5 +21,5 @@ public class Taco {
     private String name;
     @NotNull
     @Size(min = 1, message = "You must choose at least one ingredient")
-    private List<Ingredient> ingredients;
+    private List<IngredientRef> ingredients;
 }
