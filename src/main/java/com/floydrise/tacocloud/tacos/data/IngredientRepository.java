@@ -1,14 +1,8 @@
 package com.floydrise.tacocloud.tacos.data;
 
-import java.util.List;
-import java.util.Optional;
+import org.springframework.data.repository.ListCrudRepository;
 
 import com.floydrise.tacocloud.tacos.attributes.Ingredient;
 
-public interface IngredientRepository {
-    List<Ingredient> findAll();
-
-    Optional<Ingredient> findById(String id);
-
-    Ingredient save(Ingredient ingredient);
+public interface IngredientRepository extends ListCrudRepository<Ingredient, String> {
 }
