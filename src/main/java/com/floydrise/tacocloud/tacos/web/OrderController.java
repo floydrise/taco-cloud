@@ -1,7 +1,6 @@
 package com.floydrise.tacocloud.tacos.web;
 
 import jakarta.validation.Valid;
-import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Controller;
 import org.springframework.validation.Errors;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -13,7 +12,6 @@ import org.springframework.web.bind.support.SessionStatus;
 import com.floydrise.tacocloud.tacos.attributes.TacoOrder;
 import com.floydrise.tacocloud.tacos.data.OrderRepository;
 
-@Slf4j
 @Controller
 @RequestMapping("/orders")
 @SessionAttributes("tacoOrder")
