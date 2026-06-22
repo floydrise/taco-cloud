@@ -11,12 +11,19 @@ import org.springframework.web.bind.annotation.SessionAttributes;
 import org.springframework.web.bind.support.SessionStatus;
 
 import com.floydrise.tacocloud.tacos.attributes.TacoOrder;
+import com.floydrise.tacocloud.tacos.data.OrderRepository;
 
 @Slf4j
 @Controller
 @RequestMapping("/orders")
 @SessionAttributes("tacoOrder")
 public class OrderController {
+    private OrderRepository orderRepo;
+
+    public OrderController(OrderRepository orderRepository) {
+        this.orderRepo = orderRepository;
+    }
+
     @GetMapping("/current")
     public String orderForm() {
         return "orderForm";
@@ -28,7 +35,7 @@ public class OrderController {
             return "orderForm";
         }
 
-        log.info("Order submitted: {}", tacoOrder);
+        orderRepo.save(tacoOrder);
         sessionStatus.setComplete();
         return "redirect:/";
     }
