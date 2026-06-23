@@ -1,18 +1,24 @@
 package com.floydrise.tacocloud.tacos.attributes;
 
-import org.springframework.data.annotation.Id;
-import org.springframework.data.relational.core.mapping.Table;
+import jakarta.persistence.Entity;
+import jakarta.persistence.EnumType;
+import jakarta.persistence.Enumerated;
+import jakarta.persistence.Id;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Data
-@Table
+@Entity
 @AllArgsConstructor
+@NoArgsConstructor
 public class Ingredient {
     @Id
     private String id;
     private String name;
+
+    @Enumerated(EnumType.STRING)
     private Type type;
 
     public enum Type {
