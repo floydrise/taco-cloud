@@ -3,12 +3,7 @@ spring:
     name: taco-cloud
   thymeleaf:
     cache: false
-  datasource:
-    generate-unique-name: false
-    name: taco-cloud
-    url: jdbc:h2:mem:taco-cloud
-    driver-class-name: org.h2.Driver
-  jpa:
-    defer-datasource-initialization: true
-    hibernate:
-      ddl-auto: create
+  cassandra:
+    keyspace-name: tacocloud
+    schema-action: recreate
+    local-datacenter: datacenter1

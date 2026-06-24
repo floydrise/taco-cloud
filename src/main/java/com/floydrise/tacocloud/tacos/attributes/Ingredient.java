@@ -1,24 +1,21 @@
 package com.floydrise.tacocloud.tacos.attributes;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.EnumType;
-import jakarta.persistence.Enumerated;
-import jakarta.persistence.Id;
+import org.springframework.data.cassandra.core.mapping.PrimaryKey;
+import org.springframework.data.cassandra.core.mapping.Table;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Data
-@Entity
 @AllArgsConstructor
 @NoArgsConstructor
+@Table("ingredients")
 public class Ingredient {
-    @Id
+    @PrimaryKey
     private String id;
-    private String name;
 
-    @Enumerated(EnumType.STRING)
+    private String name;
     private Type type;
 
     public enum Type {
