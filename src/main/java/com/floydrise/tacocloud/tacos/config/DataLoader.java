@@ -1,6 +1,7 @@
 package com.floydrise.tacocloud.tacos.config;
 
 import org.springframework.boot.CommandLineRunner;
+import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.stereotype.Component;
 
 import com.floydrise.tacocloud.tacos.attributes.Ingredient;
@@ -8,43 +9,46 @@ import com.floydrise.tacocloud.tacos.data.IngredientRepository;
 
 @Component
 public class DataLoader implements CommandLineRunner {
-    private final IngredientRepository ingredientRepository;
+        private final IngredientRepository ingredientRepository;
+        private final MongoTemplate mongoTemplate;
 
-    public DataLoader(IngredientRepository ingredientRepository) {
-        this.ingredientRepository = ingredientRepository;
-    }
+        public DataLoader(IngredientRepository ingredientRepository, MongoTemplate mongoTemplate) {
+                this.ingredientRepository = ingredientRepository;
+                this.mongoTemplate = mongoTemplate;
+        }
 
-    @Override
-    public void run(String... args) throws Exception {
-        ingredientRepository.save(
-                new Ingredient("FLTO", "Flour Tortilla", Ingredient.Type.WRAP));
+        @Override
+        public void run(String... args) throws Exception {
+                mongoTemplate.getDb().drop();
+                ingredientRepository.save(
+                                new Ingredient("FLTO", "Flour Tortilla", Ingredient.Type.WRAP));
 
-        ingredientRepository.save(
-                new Ingredient("COTO", "Corn Tortilla", Ingredient.Type.WRAP));
+                ingredientRepository.save(
+                                new Ingredient("COTO", "Corn Tortilla", Ingredient.Type.WRAP));
 
-        ingredientRepository.save(
-                new Ingredient("GRBF", "Ground Beef", Ingredient.Type.PROTEIN));
+                ingredientRepository.save(
+                                new Ingredient("GRBF", "Ground Beef", Ingredient.Type.PROTEIN));
 
-        ingredientRepository.save(
-                new Ingredient("CARN", "Carnitas", Ingredient.Type.PROTEIN));
+                ingredientRepository.save(
+                                new Ingredient("CARN", "Carnitas", Ingredient.Type.PROTEIN));
 
-        ingredientRepository.save(
-                new Ingredient("TMTO", "Diced Tomatoes", Ingredient.Type.VEGGIES));
+                ingredientRepository.save(
+                                new Ingredient("TMTO", "Diced Tomatoes", Ingredient.Type.VEGGIES));
 
-        ingredientRepository.save(
-                new Ingredient("LETC", "Lettuce", Ingredient.Type.VEGGIES));
+                ingredientRepository.save(
+                                new Ingredient("LETC", "Lettuce", Ingredient.Type.VEGGIES));
 
-        ingredientRepository.save(
-                new Ingredient("CHED", "Cheddar", Ingredient.Type.CHEESE));
+                ingredientRepository.save(
+                                new Ingredient("CHED", "Cheddar", Ingredient.Type.CHEESE));
 
-        ingredientRepository.save(
-                new Ingredient("JACK", "Monterrey Jack", Ingredient.Type.CHEESE));
+                ingredientRepository.save(
+                                new Ingredient("JACK", "Monterrey Jack", Ingredient.Type.CHEESE));
 
-        ingredientRepository.save(
-                new Ingredient("SLSA", "Salsa", Ingredient.Type.SAUCE));
+                ingredientRepository.save(
+                                new Ingredient("SLSA", "Salsa", Ingredient.Type.SAUCE));
 
-        ingredientRepository.save(
-                new Ingredient("SRCR", "Sour Cream", Ingredient.Type.SAUCE));
-    }
+                ingredientRepository.save(
+                                new Ingredient("SRCR", "Sour Cream", Ingredient.Type.SAUCE));
+        }
 
 }
