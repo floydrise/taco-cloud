@@ -2,11 +2,12 @@ package com.floydrise.tacocloud.security;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-
+import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
+import org.springframework.security.web.SecurityFilterChain;
 
 import com.floydrise.tacocloud.tacos.attributes.User;
 import com.floydrise.tacocloud.tacos.data.UserRepository;
@@ -27,5 +28,11 @@ public class SecurityConfig {
             }
             throw new UsernameNotFoundException("User " + username + "not found");
         };
+    }
+
+    @Bean
+    public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
+        return http.authorizeHttpRequests(auth -> auth.requestMatchers("/orders", "/design").hasRole("USER")
+                .requestMatchers("/", "/**").permitAll()).build();
     }
 }
