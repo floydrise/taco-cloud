@@ -32,7 +32,16 @@ public class SecurityConfig {
 
     @Bean
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
-        return http.authorizeHttpRequests(auth -> auth.requestMatchers("/orders", "/design").hasRole("USER")
-                .requestMatchers("/", "/**").permitAll()).build();
+        return http.authorizeHttpRequests(auth -> auth
+                .requestMatchers("/orders", "/design")
+                .hasRole("USER")
+                .requestMatchers("/", "/**")
+                .permitAll())
+                .formLogin((formLogin) -> formLogin
+                        .usernameParameter("username")
+                        .passwordParameter("password")
+                        .loginPage("/login")
+                        .defaultSuccessUrl("/design"))
+                .build();
     }
 }
