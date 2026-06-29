@@ -10,10 +10,12 @@
     <link rel="stylesheet" th:href="@{/styles.css}" />
   </head>
   <body>
+    <h1>Order your taco creations!</h1>
+    <img th:src="@{/images/TacoCloud.webp}" alt="Taco Cloud image" />
+    <form method="POST" th:action="@{/logout}">
+      <input type="submit" value="Logout" />
+    </form>
     <form method="post" th:action="@{/orders}" th:object="${tacoOrder}">
-      <h1>Order your taco creations!</h1>
-      <img th:src="@{/images/TacoCloud.webp}" alt="Taco Cloud image" />
-
       <h3>Your tacos in this order:</h3>
       <a th:href="@{/design}" id="another">Design another taco</a><br />
       <ul>

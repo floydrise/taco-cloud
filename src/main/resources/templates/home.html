@@ -1,12 +1,15 @@
 <!--xmlns:th="http://www.thymeleaf.org"-->
-<!DOCTYPE html>
+<!doctype html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
-<head>
+  <head>
     <title>Taco Cloud</title>
-</head>
+  </head>
 
-<body>
-<h1>Welcome to...</h1>
-<img th:src="@{/images/TacoCloud.webp}" alt="Taco Cloud image"/>
-</body>
+  <body>
+    <h1>Welcome to...</h1>
+    <img th:src="@{/images/TacoCloud.webp}" alt="Taco Cloud image" />
+    <form method="POST" th:action="@{/logout}">
+      <input type="submit" value="Logout" />
+    </form>
+  </body>
 </html>

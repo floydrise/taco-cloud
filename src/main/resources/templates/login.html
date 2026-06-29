@@ -17,6 +17,7 @@
     </div>
 
     <p>New here? Click <a th:href="@{/register}">here</a> to register.</p>
+    <a th:href="@{/oauth2/authorization/github}">Sign in with GitHub</a>
 
     <form method="POST" th:action="@{/login}" id="loginForm">
       <label for="username">Username: </label>

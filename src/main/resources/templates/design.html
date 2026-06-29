@@ -10,7 +10,12 @@
   </head>
 
   <body>
-    <h1>Design your taco!</h1>
+    <div>
+      <h1>Design your taco!</h1>
+      <form method="POST" th:action="@{/logout}">
+        <input type="submit" value="Logout" />
+      </form>
+    </div>
     <img th:src="@{/images/TacoCloud.webp}" alt="TacoPng" />
 
     <form method="post" th:object="${taco}" th:action="@{/design}">
