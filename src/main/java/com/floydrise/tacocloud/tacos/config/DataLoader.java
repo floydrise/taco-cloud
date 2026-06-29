@@ -1,7 +1,6 @@
 package com.floydrise.tacocloud.tacos.config;
 
 import org.springframework.boot.CommandLineRunner;
-import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.stereotype.Component;
 
 import com.floydrise.tacocloud.tacos.attributes.Ingredient;
@@ -10,16 +9,13 @@ import com.floydrise.tacocloud.tacos.data.IngredientRepository;
 @Component
 public class DataLoader implements CommandLineRunner {
         private final IngredientRepository ingredientRepository;
-        private final MongoTemplate mongoTemplate;
 
-        public DataLoader(IngredientRepository ingredientRepository, MongoTemplate mongoTemplate) {
+        public DataLoader(IngredientRepository ingredientRepository) {
                 this.ingredientRepository = ingredientRepository;
-                this.mongoTemplate = mongoTemplate;
         }
 
         @Override
         public void run(String... args) throws Exception {
-                mongoTemplate.getDb().drop();
                 ingredientRepository.save(
                                 new Ingredient("FLTO", "Flour Tortilla", Ingredient.Type.WRAP));
 

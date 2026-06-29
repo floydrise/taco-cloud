@@ -3,5 +3,6 @@ spring:
     name: taco-cloud
   thymeleaf:
     cache: false
-  mongodb:
-    uri: mongodb://localhost:27017/tacocloud
+  datasource:
+    name: tacocloud
+    generate-unique-name: false

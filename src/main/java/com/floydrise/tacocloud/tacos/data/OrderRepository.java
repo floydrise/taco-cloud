@@ -6,7 +6,7 @@ import com.floydrise.tacocloud.tacos.attributes.TacoOrder;
 
 import java.util.List;
 
-public interface OrderRepository extends ListCrudRepository<TacoOrder, String> {
+public interface OrderRepository extends ListCrudRepository<TacoOrder, Long> {
     List<TacoOrder> findByDeliveryZip(String deliveryZip);
 
 }
