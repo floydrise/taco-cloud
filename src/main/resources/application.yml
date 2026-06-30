@@ -22,4 +22,4 @@ logging:
     name: ./tmp/logs/TacoCloud.log
 taco:
   orders:
-    pageSize: 10
+    page-size: 10
