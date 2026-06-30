@@ -1,0 +1,65 @@
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Your Orders</title>
+    <style>
+      table {
+        border-collapse: collapse;
+        width: 100%;
+      }
+
+      th,
+      td {
+        border: 1px solid #ccc;
+        padding: 8px;
+        text-align: left;
+      }
+
+      th {
+        background: #f4f4f4;
+      }
+
+      .empty {
+        margin-top: 1rem;
+        font-style: italic;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Your Orders</h1>
+
+    <div th:if="${#lists.isEmpty(orders)}" class="empty">
+      You haven't placed any orders yet.
+    </div>
+
+    <table th:unless="${#lists.isEmpty(orders)}">
+      <thead>
+        <tr>
+          <th>Placed</th>
+          <th>Name</th>
+          <th>Address</th>
+          <th>City</th>
+          <th>State</th>
+          <th>Zip</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr th:each="order : ${orders}">
+          <td th:text="${order.placedAt}"></td>
+            2026-01-01
+          </td>
+          <td th:text="${order.deliveryName}">John Doe</td>
+          <td th:text="${order.deliveryStreet}">123 Main St</td>
+          <td th:text="${order.deliveryCity}">Springfield</td>
+          <td th:text="${order.deliveryState}">CA</td>
+          <td th:text="${order.deliveryZip}">90210</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>
+      <a th:href="@{/design}">Create another taco</a>
+    </p>
+  </body>
+</html>

@@ -17,3 +17,9 @@ spring:
               - read:user
               - user:email
             redirect-uri: "{baseUrl}/login/oauth2/code/{registrationId}"
+logging:
+  file:
+    name: ./tmp/logs/TacoCloud.log
+taco:
+  orders:
+    pageSize: 10
