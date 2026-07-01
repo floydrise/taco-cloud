@@ -1,52 +1,89 @@
 package com.floydrise.tacocloud.tacos.config;
 
+import java.util.Arrays;
+
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Profile;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Component;
 
 import com.floydrise.tacocloud.tacos.attributes.Ingredient;
+import com.floydrise.tacocloud.tacos.attributes.Ingredient.Type;
+import com.floydrise.tacocloud.tacos.attributes.Taco;
 import com.floydrise.tacocloud.tacos.data.IngredientRepository;
+import com.floydrise.tacocloud.tacos.data.TacoRepository;
+import com.floydrise.tacocloud.tacos.data.UserRepository;
 
 @Profile("!prod")
 @Component
 public class DataLoader implements CommandLineRunner {
         private final IngredientRepository ingredientRepository;
+        private final UserRepository userRepository;
+        private final PasswordEncoder passwordEncoder;
+        private final TacoRepository tacoRepository;
 
-        public DataLoader(IngredientRepository ingredientRepository) {
+        public DataLoader(IngredientRepository ingredientRepository, UserRepository userRepo,
+                        PasswordEncoder encoder,
+                        TacoRepository tacoRepo) {
                 this.ingredientRepository = ingredientRepository;
+                this.userRepository = userRepo;
+                this.passwordEncoder = encoder;
+                this.tacoRepository = tacoRepo;
         }
 
         @Override
         public void run(String... args) throws Exception {
-                ingredientRepository.save(
-                                new Ingredient("FLTO", "Flour Tortilla", Ingredient.Type.WRAP));
+                Ingredient flourTortilla = new Ingredient(
+                                "FLTO", "Flour Tortilla", Type.WRAP);
+                Ingredient cornTortilla = new Ingredient(
+                                "COTO", "Corn Tortilla", Type.WRAP);
+                Ingredient groundBeef = new Ingredient(
+                                "GRBF", "Ground Beef", Type.PROTEIN);
+                Ingredient carnitas = new Ingredient(
+                                "CARN", "Carnitas", Type.PROTEIN);
+                Ingredient tomatoes = new Ingredient(
+                                "TMTO", "Diced Tomatoes", Type.VEGGIES);
+                Ingredient lettuce = new Ingredient(
+                                "LETC", "Lettuce", Type.VEGGIES);
+                Ingredient cheddar = new Ingredient(
+                                "CHED", "Cheddar", Type.CHEESE);
+                Ingredient jack = new Ingredient(
+                                "JACK", "Monterrey Jack", Type.CHEESE);
+                Ingredient salsa = new Ingredient(
+                                "SLSA", "Salsa", Type.SAUCE);
+                Ingredient sourCream = new Ingredient(
+                                "SRCR", "Sour Cream", Type.SAUCE);
+                ingredientRepository.save(flourTortilla);
+                ingredientRepository.save(cornTortilla);
+                ingredientRepository.save(groundBeef);
+                ingredientRepository.save(carnitas);
+                ingredientRepository.save(tomatoes);
+                ingredientRepository.save(lettuce);
+                ingredientRepository.save(cheddar);
+                ingredientRepository.save(jack);
+                ingredientRepository.save(salsa);
+                ingredientRepository.save(sourCream);
 
-                ingredientRepository.save(
-                                new Ingredient("COTO", "Corn Tortilla", Ingredient.Type.WRAP));
+                Taco taco1 = new Taco();
+                taco1.setName("Carnivore");
+                taco1.setIngredients(Arrays.asList(
+                                flourTortilla, groundBeef, carnitas,
+                                sourCream, salsa, cheddar));
+                tacoRepository.save(taco1);
 
-                ingredientRepository.save(
-                                new Ingredient("GRBF", "Ground Beef", Ingredient.Type.PROTEIN));
+                Taco taco2 = new Taco();
+                taco2.setName("Bovine Bounty");
+                taco2.setIngredients(Arrays.asList(
+                                cornTortilla, groundBeef, cheddar,
+                                jack, sourCream));
+                tacoRepository.save(taco2);
 
-                ingredientRepository.save(
-                                new Ingredient("CARN", "Carnitas", Ingredient.Type.PROTEIN));
-
-                ingredientRepository.save(
-                                new Ingredient("TMTO", "Diced Tomatoes", Ingredient.Type.VEGGIES));
-
-                ingredientRepository.save(
-                                new Ingredient("LETC", "Lettuce", Ingredient.Type.VEGGIES));
-
-                ingredientRepository.save(
-                                new Ingredient("CHED", "Cheddar", Ingredient.Type.CHEESE));
-
-                ingredientRepository.save(
-                                new Ingredient("JACK", "Monterrey Jack", Ingredient.Type.CHEESE));
-
-                ingredientRepository.save(
-                                new Ingredient("SLSA", "Salsa", Ingredient.Type.SAUCE));
-
-                ingredientRepository.save(
-                                new Ingredient("SRCR", "Sour Cream", Ingredient.Type.SAUCE));
+                Taco taco3 = new Taco();
+                taco3.setName("Veg-Out");
+                taco3.setIngredients(Arrays.asList(
+                                flourTortilla, cornTortilla, tomatoes,
+                                lettuce, salsa));
+                tacoRepository.save(taco3);
         }
 
 }
