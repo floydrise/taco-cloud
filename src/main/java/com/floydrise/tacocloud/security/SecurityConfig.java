@@ -39,11 +39,13 @@ public class SecurityConfig {
 
     @Bean
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
-        return http.authorizeHttpRequests(auth -> auth
-                .requestMatchers("/orders", "/design")
-                .hasRole("USER")
-                .anyRequest()
-                .permitAll())
+        return http
+                .csrf(csrf -> csrf.ignoringRequestMatchers("/api/**"))
+                .authorizeHttpRequests(auth -> auth
+                        .requestMatchers("/orders", "/design")
+                        .hasRole("USER")
+                        .anyRequest()
+                        .permitAll())
                 .oauth2Login(
                         oauth2 -> oauth2.loginPage("/login").successHandler((request, response, authentication) -> {
                             OAuth2User user = (OAuth2User) authentication.getPrincipal();

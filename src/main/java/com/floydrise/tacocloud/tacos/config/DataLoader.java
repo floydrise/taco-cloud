@@ -18,16 +18,12 @@ import com.floydrise.tacocloud.tacos.data.UserRepository;
 @Component
 public class DataLoader implements CommandLineRunner {
         private final IngredientRepository ingredientRepository;
-        private final UserRepository userRepository;
-        private final PasswordEncoder passwordEncoder;
         private final TacoRepository tacoRepository;
 
         public DataLoader(IngredientRepository ingredientRepository, UserRepository userRepo,
                         PasswordEncoder encoder,
                         TacoRepository tacoRepo) {
                 this.ingredientRepository = ingredientRepository;
-                this.userRepository = userRepo;
-                this.passwordEncoder = encoder;
                 this.tacoRepository = tacoRepo;
         }
 

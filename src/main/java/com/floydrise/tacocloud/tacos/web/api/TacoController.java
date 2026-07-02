@@ -37,12 +37,13 @@ public class TacoController {
 
     @GetMapping("/{id}")
     public ResponseEntity<Taco> tacoById(@PathVariable Long id) {
-        return tacoRepository.findById(id).map(ResponseEntity::ok).orElseGet(() -> ResponseEntity.notFound().build());
+        return tacoRepository.findById(id).map(ResponseEntity::ok)
+                .orElseGet(() -> ResponseEntity.notFound().build());
     }
 
     @PostMapping(consumes = "application/json")
     @ResponseStatus(HttpStatus.CREATED)
-    public Taco postMethodName(@RequestBody Taco taco) {
+    public Taco postTaco(@RequestBody Taco taco) {
         return tacoRepository.save(taco);
     }
 }
