@@ -17,6 +17,9 @@ spring:
               - read:user
               - user:email
             redirect-uri: "{baseUrl}/login/oauth2/code/{registrationId}"
+  data:
+    rest:
+      base-path: /data-api
 logging:
   file:
     name: ./tmp/logs/TacoCloud.log
