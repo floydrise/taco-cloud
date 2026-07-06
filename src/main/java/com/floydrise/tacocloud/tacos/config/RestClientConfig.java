@@ -8,6 +8,9 @@ import org.springframework.web.client.RestClient;
 public class RestClientConfig {
     @Bean
     RestClient restClient() {
-        return RestClient.create();
+        return RestClient
+                .builder()
+                .baseUrl("http://localhost:8080/data-api")
+                .build();
     }
 }

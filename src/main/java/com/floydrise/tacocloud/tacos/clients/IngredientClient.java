@@ -1,8 +1,6 @@
 package com.floydrise.tacocloud.tacos.clients;
 
-import java.util.HashMap;
-import java.util.Map;
-
+import org.springframework.http.MediaType;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestClient;
 
@@ -17,9 +15,20 @@ public class IngredientClient {
     }
 
     public Ingredient getIngredientById(String ingredientId) {
-        Map<String, String> urlVariables = new HashMap<>();
-        urlVariables.put("id", ingredientId);
-        return restClient.get().uri("http://localhost:8080/data-api/ingredients/{id}", urlVariables).retrieve()
+        return restClient
+                .get()
+                .uri("/ingredients/{id}", ingredientId)
+                .retrieve()
+                .body(Ingredient.class);
+    }
+
+    public Ingredient postIngredient(Ingredient ingredient) {
+        return restClient
+                .post()
+                .uri("/ingredients")
+                .contentType(MediaType.APPLICATION_JSON)
+                .body(ingredient)
+                .retrieve()
                 .body(Ingredient.class);
     }
 }
