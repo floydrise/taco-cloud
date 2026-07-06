@@ -1,6 +1,7 @@
 package com.floydrise.tacocloud.tacos.web;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -31,6 +32,13 @@ public class IngredientByIdController {
         Ingredient ingredient = ingredientClient.postIngredient(new Ingredient(
                 "VEGN", "Vegan Tortilla", Type.WRAP));
         System.out.println(ingredient);
+        return "redirect:/";
+    }
+
+    @DeleteMapping("/{id}")
+    public String deleteIngredient(@PathVariable String id) {
+        var res = ingredientClient.deleteIngredientById(id);
+        System.out.println(res);
         return "redirect:/";
     }
 }

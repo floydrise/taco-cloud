@@ -1,6 +1,7 @@
 package com.floydrise.tacocloud.tacos.clients;
 
 import org.springframework.http.MediaType;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestClient;
 
@@ -30,5 +31,9 @@ public class IngredientClient {
                 .body(ingredient)
                 .retrieve()
                 .body(Ingredient.class);
+    }
+
+    public ResponseEntity<Void> deleteIngredientById(String id) {
+        return restClient.delete().uri("/ingredients/{id}", id).retrieve().toBodilessEntity();
     }
 }

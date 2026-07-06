@@ -1198,3 +1198,557 @@ org.thymeleaf.exceptions.TemplateInputException: Error resolving template [ingre
 2026-07-06T17:33:50.387+03:00  WARN 10576 --- [taco-cloud] [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-240]
 2026-07-06T17:33:50.387+03:00  INFO 10576 --- [taco-cloud] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : tacocloud - Shutdown initiated...
 2026-07-06T17:33:50.387+03:00  INFO 10576 --- [taco-cloud] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : tacocloud - Shutdown completed.
+2026-07-06T17:46:42.676+03:00  INFO 22523 --- [taco-cloud] [restartedMain] c.f.tacocloud.TacoCloudApplication       : Starting TacoCloudApplication using Java 26.0.1 with PID 22523 (/Users/floydrise/Documents/Programming/Taco Cloud/taco-cloud/target/classes started by floydrise in /Users/floydrise/Documents/Programming/Taco Cloud/taco-cloud)
+2026-07-06T17:46:42.677+03:00  INFO 22523 --- [taco-cloud] [restartedMain] c.f.tacocloud.TacoCloudApplication       : No active profile set, falling back to 1 default profile: "default"
+2026-07-06T17:46:42.699+03:00  INFO 22523 --- [taco-cloud] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-07-06T17:46:42.700+03:00  INFO 22523 --- [taco-cloud] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-07-06T17:46:43.021+03:00  INFO 22523 --- [taco-cloud] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-06T17:46:43.043+03:00  INFO 22523 --- [taco-cloud] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 18 ms. Found 5 JPA repository interfaces.
+2026-07-06T17:46:43.270+03:00  INFO 22523 --- [taco-cloud] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-07-06T17:46:43.276+03:00  INFO 22523 --- [taco-cloud] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-07-06T17:46:43.277+03:00  INFO 22523 --- [taco-cloud] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-07-06T17:46:43.290+03:00  INFO 22523 --- [taco-cloud] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 588 ms
+2026-07-06T17:46:43.360+03:00  INFO 22523 --- [taco-cloud] [restartedMain] com.zaxxer.hikari.HikariDataSource       : tacocloud - Starting...
+2026-07-06T17:46:43.442+03:00  INFO 22523 --- [taco-cloud] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : tacocloud - Added connection conn0: url=jdbc:h2:mem:tacocloud user=SA
+2026-07-06T17:46:43.443+03:00  INFO 22523 --- [taco-cloud] [restartedMain] com.zaxxer.hikari.HikariDataSource       : tacocloud - Start completed.
+2026-07-06T17:46:43.460+03:00  INFO 22523 --- [taco-cloud] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-07-06T17:46:43.489+03:00  INFO 22523 --- [taco-cloud] [restartedMain] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.4.1.Final
+2026-07-06T17:46:43.662+03:00  INFO 22523 --- [taco-cloud] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-06T17:46:43.702+03:00  INFO 22523 --- [taco-cloud] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:mem:tacocloud]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: TACOCLOUD/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-07-06T17:46:44.171+03:00  INFO 22523 --- [taco-cloud] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-06T17:46:44.195+03:00  INFO 22523 --- [taco-cloud] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-06T17:46:44.233+03:00  INFO 22523 --- [taco-cloud] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-07-06T17:46:44.489+03:00  WARN 22523 --- [taco-cloud] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-06T17:46:44.581+03:00  INFO 22523 --- [taco-cloud] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2026-07-06T17:46:44.835+03:00  INFO 22523 --- [taco-cloud] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-07-06T17:46:44.838+03:00  INFO 22523 --- [taco-cloud] [restartedMain] c.f.tacocloud.TacoCloudApplication       : Started TacoCloudApplication in 2.349 seconds (process running for 2.536)
+2026-07-06T17:46:53.979+03:00  INFO 22523 --- [taco-cloud] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-07-06T17:46:53.979+03:00  INFO 22523 --- [taco-cloud] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-07-06T17:46:53.980+03:00  INFO 22523 --- [taco-cloud] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-07-06T17:47:45.824+03:00  INFO 22523 --- [taco-cloud] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2026-07-06T17:47:45.828+03:00  INFO 22523 --- [taco-cloud] [Thread-1] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-07-06T17:47:45.832+03:00  INFO 22523 --- [taco-cloud] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-07-06T17:47:45.835+03:00  INFO 22523 --- [taco-cloud] [Thread-1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-06T17:47:45.840+03:00  WARN 22523 --- [taco-cloud] [Thread-1] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-240]
+2026-07-06T17:47:45.841+03:00  INFO 22523 --- [taco-cloud] [Thread-1] com.zaxxer.hikari.HikariDataSource       : tacocloud - Shutdown initiated...
+2026-07-06T17:47:45.842+03:00  INFO 22523 --- [taco-cloud] [Thread-1] com.zaxxer.hikari.HikariDataSource       : tacocloud - Shutdown completed.
+2026-07-06T17:47:45.892+03:00  INFO 22523 --- [taco-cloud] [restartedMain] c.f.tacocloud.TacoCloudApplication       : Starting TacoCloudApplication using Java 26.0.1 with PID 22523 (/Users/floydrise/Documents/Programming/Taco Cloud/taco-cloud/target/classes started by floydrise in /Users/floydrise/Documents/Programming/Taco Cloud/taco-cloud)
+2026-07-06T17:47:45.892+03:00  INFO 22523 --- [taco-cloud] [restartedMain] c.f.tacocloud.TacoCloudApplication       : No active profile set, falling back to 1 default profile: "default"
+2026-07-06T17:47:45.958+03:00  INFO 22523 --- [taco-cloud] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-06T17:47:45.964+03:00  INFO 22523 --- [taco-cloud] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 5 JPA repository interfaces.
+2026-07-06T17:47:46.008+03:00  INFO 22523 --- [taco-cloud] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-07-06T17:47:46.008+03:00  INFO 22523 --- [taco-cloud] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-07-06T17:47:46.009+03:00  INFO 22523 --- [taco-cloud] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-07-06T17:47:46.013+03:00  INFO 22523 --- [taco-cloud] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 121 ms
+2026-07-06T17:47:46.031+03:00  INFO 22523 --- [taco-cloud] [restartedMain] com.zaxxer.hikari.HikariDataSource       : tacocloud - Starting...
+2026-07-06T17:47:46.032+03:00  INFO 22523 --- [taco-cloud] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : tacocloud - Added connection conn10: url=jdbc:h2:mem:tacocloud user=SA
+2026-07-06T17:47:46.032+03:00  INFO 22523 --- [taco-cloud] [restartedMain] com.zaxxer.hikari.HikariDataSource       : tacocloud - Start completed.
+2026-07-06T17:47:46.033+03:00  INFO 22523 --- [taco-cloud] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-07-06T17:47:46.042+03:00  INFO 22523 --- [taco-cloud] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-06T17:47:46.042+03:00  INFO 22523 --- [taco-cloud] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:mem:tacocloud]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: TACOCLOUD/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-07-06T17:47:46.088+03:00  INFO 22523 --- [taco-cloud] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-06T17:47:46.094+03:00  INFO 22523 --- [taco-cloud] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-06T17:47:46.150+03:00  WARN 22523 --- [taco-cloud] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-06T17:47:46.175+03:00  INFO 22523 --- [taco-cloud] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2026-07-06T17:47:46.266+03:00  INFO 22523 --- [taco-cloud] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-07-06T17:47:46.268+03:00  INFO 22523 --- [taco-cloud] [restartedMain] c.f.tacocloud.TacoCloudApplication       : Started TacoCloudApplication in 0.387 seconds (process running for 63.965)
+2026-07-06T17:47:46.281+03:00  INFO 22523 --- [taco-cloud] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-07-06T17:47:47.667+03:00  INFO 22523 --- [taco-cloud] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2026-07-06T17:47:47.670+03:00  INFO 22523 --- [taco-cloud] [Thread-5] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-07-06T17:47:47.671+03:00  INFO 22523 --- [taco-cloud] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-07-06T17:47:47.674+03:00  INFO 22523 --- [taco-cloud] [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-06T17:47:47.676+03:00  WARN 22523 --- [taco-cloud] [Thread-5] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-240]
+2026-07-06T17:47:47.676+03:00  INFO 22523 --- [taco-cloud] [Thread-5] com.zaxxer.hikari.HikariDataSource       : tacocloud - Shutdown initiated...
+2026-07-06T17:47:47.677+03:00  INFO 22523 --- [taco-cloud] [Thread-5] com.zaxxer.hikari.HikariDataSource       : tacocloud - Shutdown completed.
+2026-07-06T17:47:47.720+03:00  INFO 22523 --- [taco-cloud] [restartedMain] c.f.tacocloud.TacoCloudApplication       : Starting TacoCloudApplication using Java 26.0.1 with PID 22523 (/Users/floydrise/Documents/Programming/Taco Cloud/taco-cloud/target/classes started by floydrise in /Users/floydrise/Documents/Programming/Taco Cloud/taco-cloud)
+2026-07-06T17:47:47.720+03:00  INFO 22523 --- [taco-cloud] [restartedMain] c.f.tacocloud.TacoCloudApplication       : No active profile set, falling back to 1 default profile: "default"
+2026-07-06T17:47:47.777+03:00  INFO 22523 --- [taco-cloud] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-06T17:47:47.782+03:00  INFO 22523 --- [taco-cloud] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 5 JPA repository interfaces.
+2026-07-06T17:47:47.823+03:00  INFO 22523 --- [taco-cloud] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-07-06T17:47:47.823+03:00  INFO 22523 --- [taco-cloud] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-07-06T17:47:47.823+03:00  INFO 22523 --- [taco-cloud] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-07-06T17:47:47.827+03:00  INFO 22523 --- [taco-cloud] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 106 ms
+2026-07-06T17:47:47.844+03:00  INFO 22523 --- [taco-cloud] [restartedMain] com.zaxxer.hikari.HikariDataSource       : tacocloud - Starting...
+2026-07-06T17:47:47.845+03:00  INFO 22523 --- [taco-cloud] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : tacocloud - Added connection conn20: url=jdbc:h2:mem:tacocloud user=SA
+2026-07-06T17:47:47.845+03:00  INFO 22523 --- [taco-cloud] [restartedMain] com.zaxxer.hikari.HikariDataSource       : tacocloud - Start completed.
+2026-07-06T17:47:47.846+03:00  INFO 22523 --- [taco-cloud] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-07-06T17:47:47.853+03:00  INFO 22523 --- [taco-cloud] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-06T17:47:47.853+03:00  INFO 22523 --- [taco-cloud] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:mem:tacocloud]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: TACOCLOUD/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-07-06T17:47:47.896+03:00  INFO 22523 --- [taco-cloud] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-06T17:47:47.900+03:00  INFO 22523 --- [taco-cloud] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-06T17:47:47.958+03:00  WARN 22523 --- [taco-cloud] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-06T17:47:47.980+03:00  INFO 22523 --- [taco-cloud] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2026-07-06T17:47:48.017+03:00  WARN 22523 --- [taco-cloud] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/webmvc/autoconfigure/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invalid mapping on handler class [com.floydrise.tacocloud.tacos.web.IngredientByIdController]: public java.lang.String com.floydrise.tacocloud.tacos.web.IngredientByIdController.deleteIngredient()
+2026-07-06T17:47:48.018+03:00  INFO 22523 --- [taco-cloud] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-06T17:47:48.019+03:00  WARN 22523 --- [taco-cloud] [restartedMain] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-240]
+2026-07-06T17:47:48.019+03:00  INFO 22523 --- [taco-cloud] [restartedMain] com.zaxxer.hikari.HikariDataSource       : tacocloud - Shutdown initiated...
+2026-07-06T17:47:48.051+03:00  INFO 22523 --- [taco-cloud] [restartedMain] com.zaxxer.hikari.HikariDataSource       : tacocloud - Shutdown completed.
+2026-07-06T17:47:48.052+03:00  INFO 22523 --- [taco-cloud] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2026-07-06T17:47:48.054+03:00  INFO 22523 --- [taco-cloud] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-07-06T17:47:48.060+03:00 ERROR 22523 --- [taco-cloud] [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Invalid mapping pattern detected:
+/{id
+    ^
+Expected close capture character after variable name }
+
+Action:
+
+Fix this pattern in your application or switch to the legacy parser implementation with 'spring.mvc.pathmatch.matching-strategy=ant_path_matcher'.
+
+2026-07-06T17:47:49.498+03:00  INFO 22523 --- [taco-cloud] [restartedMain] c.f.tacocloud.TacoCloudApplication       : Starting TacoCloudApplication using Java 26.0.1 with PID 22523 (/Users/floydrise/Documents/Programming/Taco Cloud/taco-cloud/target/classes started by floydrise in /Users/floydrise/Documents/Programming/Taco Cloud/taco-cloud)
+2026-07-06T17:47:49.498+03:00  INFO 22523 --- [taco-cloud] [restartedMain] c.f.tacocloud.TacoCloudApplication       : No active profile set, falling back to 1 default profile: "default"
+2026-07-06T17:47:49.564+03:00  INFO 22523 --- [taco-cloud] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-06T17:47:49.569+03:00  INFO 22523 --- [taco-cloud] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 5 JPA repository interfaces.
+2026-07-06T17:47:49.612+03:00  INFO 22523 --- [taco-cloud] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-07-06T17:47:49.613+03:00  INFO 22523 --- [taco-cloud] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-07-06T17:47:49.613+03:00  INFO 22523 --- [taco-cloud] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-07-06T17:47:49.617+03:00  INFO 22523 --- [taco-cloud] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 118 ms
+2026-07-06T17:47:49.633+03:00  INFO 22523 --- [taco-cloud] [restartedMain] com.zaxxer.hikari.HikariDataSource       : tacocloud - Starting...
+2026-07-06T17:47:49.634+03:00  INFO 22523 --- [taco-cloud] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : tacocloud - Added connection conn24: url=jdbc:h2:mem:tacocloud user=SA
+2026-07-06T17:47:49.634+03:00  INFO 22523 --- [taco-cloud] [restartedMain] com.zaxxer.hikari.HikariDataSource       : tacocloud - Start completed.
+2026-07-06T17:47:49.635+03:00  INFO 22523 --- [taco-cloud] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-07-06T17:47:49.642+03:00  INFO 22523 --- [taco-cloud] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-06T17:47:49.643+03:00  INFO 22523 --- [taco-cloud] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:mem:tacocloud]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: TACOCLOUD/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-07-06T17:47:49.681+03:00  INFO 22523 --- [taco-cloud] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-06T17:47:49.685+03:00  INFO 22523 --- [taco-cloud] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-06T17:47:49.737+03:00  WARN 22523 --- [taco-cloud] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-06T17:47:49.758+03:00  INFO 22523 --- [taco-cloud] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2026-07-06T17:47:49.850+03:00  INFO 22523 --- [taco-cloud] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-07-06T17:47:49.851+03:00  INFO 22523 --- [taco-cloud] [restartedMain] c.f.tacocloud.TacoCloudApplication       : Started TacoCloudApplication in 0.369 seconds (process running for 67.548)
+2026-07-06T17:47:49.861+03:00  INFO 22523 --- [taco-cloud] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-07-06T17:47:56.294+03:00  INFO 22523 --- [taco-cloud] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2026-07-06T17:47:56.295+03:00  INFO 22523 --- [taco-cloud] [Thread-10] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-07-06T17:47:56.296+03:00  INFO 22523 --- [taco-cloud] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-07-06T17:47:56.297+03:00  INFO 22523 --- [taco-cloud] [Thread-10] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-06T17:47:56.299+03:00  WARN 22523 --- [taco-cloud] [Thread-10] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-240]
+2026-07-06T17:47:56.299+03:00  INFO 22523 --- [taco-cloud] [Thread-10] com.zaxxer.hikari.HikariDataSource       : tacocloud - Shutdown initiated...
+2026-07-06T17:47:56.299+03:00  INFO 22523 --- [taco-cloud] [Thread-10] com.zaxxer.hikari.HikariDataSource       : tacocloud - Shutdown completed.
+2026-07-06T17:47:56.341+03:00  INFO 22523 --- [taco-cloud] [restartedMain] c.f.tacocloud.TacoCloudApplication       : Starting TacoCloudApplication using Java 26.0.1 with PID 22523 (/Users/floydrise/Documents/Programming/Taco Cloud/taco-cloud/target/classes started by floydrise in /Users/floydrise/Documents/Programming/Taco Cloud/taco-cloud)
+2026-07-06T17:47:56.341+03:00  INFO 22523 --- [taco-cloud] [restartedMain] c.f.tacocloud.TacoCloudApplication       : No active profile set, falling back to 1 default profile: "default"
+2026-07-06T17:47:56.394+03:00  INFO 22523 --- [taco-cloud] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-06T17:47:56.399+03:00  INFO 22523 --- [taco-cloud] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 5 JPA repository interfaces.
+2026-07-06T17:47:56.437+03:00  INFO 22523 --- [taco-cloud] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-07-06T17:47:56.438+03:00  INFO 22523 --- [taco-cloud] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-07-06T17:47:56.438+03:00  INFO 22523 --- [taco-cloud] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-07-06T17:47:56.442+03:00  INFO 22523 --- [taco-cloud] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 100 ms
+2026-07-06T17:47:56.460+03:00  INFO 22523 --- [taco-cloud] [restartedMain] com.zaxxer.hikari.HikariDataSource       : tacocloud - Starting...
+2026-07-06T17:47:56.461+03:00  INFO 22523 --- [taco-cloud] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : tacocloud - Added connection conn34: url=jdbc:h2:mem:tacocloud user=SA
+2026-07-06T17:47:56.461+03:00  INFO 22523 --- [taco-cloud] [restartedMain] com.zaxxer.hikari.HikariDataSource       : tacocloud - Start completed.
+2026-07-06T17:47:56.462+03:00  INFO 22523 --- [taco-cloud] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-07-06T17:47:56.471+03:00  INFO 22523 --- [taco-cloud] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-06T17:47:56.471+03:00  INFO 22523 --- [taco-cloud] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:mem:tacocloud]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: TACOCLOUD/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-07-06T17:47:56.512+03:00  INFO 22523 --- [taco-cloud] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-06T17:47:56.516+03:00  INFO 22523 --- [taco-cloud] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-06T17:47:56.547+03:00  WARN 22523 --- [taco-cloud] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'ingredientByIdController' defined in file [/Users/floydrise/Documents/Programming/Taco Cloud/taco-cloud/target/classes/com/floydrise/tacocloud/tacos/web/IngredientByIdController.class]: Failed to instantiate [com.floydrise.tacocloud.tacos.web.IngredientByIdController]: Constructor threw exception
+2026-07-06T17:47:56.547+03:00  INFO 22523 --- [taco-cloud] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-06T17:47:56.549+03:00  WARN 22523 --- [taco-cloud] [restartedMain] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-240]
+2026-07-06T17:47:56.549+03:00  INFO 22523 --- [taco-cloud] [restartedMain] com.zaxxer.hikari.HikariDataSource       : tacocloud - Shutdown initiated...
+2026-07-06T17:47:56.549+03:00  INFO 22523 --- [taco-cloud] [restartedMain] com.zaxxer.hikari.HikariDataSource       : tacocloud - Shutdown completed.
+2026-07-06T17:47:56.549+03:00  INFO 22523 --- [taco-cloud] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2026-07-06T17:47:56.552+03:00  INFO 22523 --- [taco-cloud] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-07-06T17:47:56.552+03:00 ERROR 22523 --- [taco-cloud] [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'ingredientByIdController' defined in file [/Users/floydrise/Documents/Programming/Taco Cloud/taco-cloud/target/classes/com/floydrise/tacocloud/tacos/web/IngredientByIdController.class]: Failed to instantiate [com.floydrise.tacocloud.tacos.web.IngredientByIdController]: Constructor threw exception
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:321) ~[spring-beans-7.0.8.jar:7.0.8]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:309) ~[spring-beans-7.0.8.jar:7.0.8]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1380) ~[spring-beans-7.0.8.jar:7.0.8]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1219) ~[spring-beans-7.0.8.jar:7.0.8]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:565) ~[spring-beans-7.0.8.jar:7.0.8]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:525) ~[spring-beans-7.0.8.jar:7.0.8]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:333) ~[spring-beans-7.0.8.jar:7.0.8]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371) ~[spring-beans-7.0.8.jar:7.0.8]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:331) ~[spring-beans-7.0.8.jar:7.0.8]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:196) ~[spring-beans-7.0.8.jar:7.0.8]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1225) ~[spring-beans-7.0.8.jar:7.0.8]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1191) ~[spring-beans-7.0.8.jar:7.0.8]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1121) ~[spring-beans-7.0.8.jar:7.0.8]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:994) ~[spring-context-7.0.8.jar:7.0.8]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:621) ~[spring-context-7.0.8.jar:7.0.8]
+	at org.springframework.boot.web.server.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143) ~[spring-boot-web-server-4.1.0.jar:4.1.0]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:756) ~[spring-boot-4.1.0.jar:4.1.0]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:445) ~[spring-boot-4.1.0.jar:4.1.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:321) ~[spring-boot-4.1.0.jar:4.1.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1365) ~[spring-boot-4.1.0.jar:4.1.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354) ~[spring-boot-4.1.0.jar:4.1.0]
+	at com.floydrise.tacocloud.TacoCloudApplication.main(TacoCloudApplication.java:10) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:52) ~[spring-boot-devtools-4.1.0.jar:4.1.0]
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.floydrise.tacocloud.tacos.web.IngredientByIdController]: Constructor threw exception
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:220) ~[spring-beans-7.0.8.jar:7.0.8]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:129) ~[spring-beans-7.0.8.jar:7.0.8]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:318) ~[spring-beans-7.0.8.jar:7.0.8]
+	... 24 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problems: 
+	Syntax error, insert "}" to complete ClassBody
+	Syntax error, insert "Type VariableDeclaratorId" to complete FormalParameterList
+	Syntax error on token "}", delete this token
+
+	at com.floydrise.tacocloud.tacos.web.IngredientByIdController.<init>(IngredientByIdController.java:36) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483) ~[na:na]
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:207) ~[spring-beans-7.0.8.jar:7.0.8]
+	... 26 common frames omitted
+
+2026-07-06T17:48:01.009+03:00  INFO 22523 --- [taco-cloud] [restartedMain] c.f.tacocloud.TacoCloudApplication       : Starting TacoCloudApplication using Java 26.0.1 with PID 22523 (/Users/floydrise/Documents/Programming/Taco Cloud/taco-cloud/target/classes started by floydrise in /Users/floydrise/Documents/Programming/Taco Cloud/taco-cloud)
+2026-07-06T17:48:01.009+03:00  INFO 22523 --- [taco-cloud] [restartedMain] c.f.tacocloud.TacoCloudApplication       : No active profile set, falling back to 1 default profile: "default"
+2026-07-06T17:48:01.063+03:00  INFO 22523 --- [taco-cloud] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-06T17:48:01.067+03:00  INFO 22523 --- [taco-cloud] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 3 ms. Found 5 JPA repository interfaces.
+2026-07-06T17:48:01.106+03:00  INFO 22523 --- [taco-cloud] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-07-06T17:48:01.106+03:00  INFO 22523 --- [taco-cloud] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-07-06T17:48:01.106+03:00  INFO 22523 --- [taco-cloud] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-07-06T17:48:01.110+03:00  INFO 22523 --- [taco-cloud] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 100 ms
+2026-07-06T17:48:01.127+03:00  INFO 22523 --- [taco-cloud] [restartedMain] com.zaxxer.hikari.HikariDataSource       : tacocloud - Starting...
+2026-07-06T17:48:01.127+03:00  INFO 22523 --- [taco-cloud] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : tacocloud - Added connection conn35: url=jdbc:h2:mem:tacocloud user=SA
+2026-07-06T17:48:01.128+03:00  INFO 22523 --- [taco-cloud] [restartedMain] com.zaxxer.hikari.HikariDataSource       : tacocloud - Start completed.
+2026-07-06T17:48:01.128+03:00  INFO 22523 --- [taco-cloud] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-07-06T17:48:01.136+03:00  INFO 22523 --- [taco-cloud] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-06T17:48:01.136+03:00  INFO 22523 --- [taco-cloud] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:mem:tacocloud]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: TACOCLOUD/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-07-06T17:48:01.173+03:00  INFO 22523 --- [taco-cloud] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-06T17:48:01.177+03:00  INFO 22523 --- [taco-cloud] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-06T17:48:01.233+03:00  WARN 22523 --- [taco-cloud] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-06T17:48:01.254+03:00  INFO 22523 --- [taco-cloud] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2026-07-06T17:48:01.342+03:00  INFO 22523 --- [taco-cloud] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-07-06T17:48:01.343+03:00  INFO 22523 --- [taco-cloud] [restartedMain] c.f.tacocloud.TacoCloudApplication       : Started TacoCloudApplication in 0.346 seconds (process running for 79.04)
+2026-07-06T17:48:01.353+03:00  INFO 22523 --- [taco-cloud] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-07-06T17:48:02.750+03:00  INFO 22523 --- [taco-cloud] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2026-07-06T17:48:02.753+03:00  INFO 22523 --- [taco-cloud] [Thread-17] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-07-06T17:48:02.756+03:00  INFO 22523 --- [taco-cloud] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-07-06T17:48:02.759+03:00  INFO 22523 --- [taco-cloud] [Thread-17] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-06T17:48:02.761+03:00  WARN 22523 --- [taco-cloud] [Thread-17] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-240]
+2026-07-06T17:48:02.761+03:00  INFO 22523 --- [taco-cloud] [Thread-17] com.zaxxer.hikari.HikariDataSource       : tacocloud - Shutdown initiated...
+2026-07-06T17:48:02.762+03:00  INFO 22523 --- [taco-cloud] [Thread-17] com.zaxxer.hikari.HikariDataSource       : tacocloud - Shutdown completed.
+2026-07-06T17:48:02.806+03:00  INFO 22523 --- [taco-cloud] [restartedMain] c.f.tacocloud.TacoCloudApplication       : Starting TacoCloudApplication using Java 26.0.1 with PID 22523 (/Users/floydrise/Documents/Programming/Taco Cloud/taco-cloud/target/classes started by floydrise in /Users/floydrise/Documents/Programming/Taco Cloud/taco-cloud)
+2026-07-06T17:48:02.806+03:00  INFO 22523 --- [taco-cloud] [restartedMain] c.f.tacocloud.TacoCloudApplication       : No active profile set, falling back to 1 default profile: "default"
+2026-07-06T17:48:02.858+03:00  INFO 22523 --- [taco-cloud] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-06T17:48:02.862+03:00  INFO 22523 --- [taco-cloud] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 3 ms. Found 5 JPA repository interfaces.
+2026-07-06T17:48:02.906+03:00  INFO 22523 --- [taco-cloud] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-07-06T17:48:02.907+03:00  INFO 22523 --- [taco-cloud] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-07-06T17:48:02.907+03:00  INFO 22523 --- [taco-cloud] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-07-06T17:48:02.916+03:00  INFO 22523 --- [taco-cloud] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 109 ms
+2026-07-06T17:48:02.937+03:00  INFO 22523 --- [taco-cloud] [restartedMain] com.zaxxer.hikari.HikariDataSource       : tacocloud - Starting...
+2026-07-06T17:48:02.938+03:00  INFO 22523 --- [taco-cloud] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : tacocloud - Added connection conn45: url=jdbc:h2:mem:tacocloud user=SA
+2026-07-06T17:48:02.938+03:00  INFO 22523 --- [taco-cloud] [restartedMain] com.zaxxer.hikari.HikariDataSource       : tacocloud - Start completed.
+2026-07-06T17:48:02.939+03:00  INFO 22523 --- [taco-cloud] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-07-06T17:48:02.948+03:00  INFO 22523 --- [taco-cloud] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-06T17:48:02.948+03:00  INFO 22523 --- [taco-cloud] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:mem:tacocloud]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: TACOCLOUD/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-07-06T17:48:02.982+03:00  INFO 22523 --- [taco-cloud] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-06T17:48:02.985+03:00  INFO 22523 --- [taco-cloud] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-06T17:48:03.039+03:00  WARN 22523 --- [taco-cloud] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-06T17:48:03.059+03:00  INFO 22523 --- [taco-cloud] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2026-07-06T17:48:03.146+03:00  INFO 22523 --- [taco-cloud] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-07-06T17:48:03.147+03:00  INFO 22523 --- [taco-cloud] [restartedMain] c.f.tacocloud.TacoCloudApplication       : Started TacoCloudApplication in 0.348 seconds (process running for 80.845)
+2026-07-06T17:48:03.158+03:00  INFO 22523 --- [taco-cloud] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-07-06T17:48:10.607+03:00  INFO 22523 --- [taco-cloud] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2026-07-06T17:48:10.609+03:00  INFO 22523 --- [taco-cloud] [Thread-24] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-07-06T17:48:10.612+03:00  INFO 22523 --- [taco-cloud] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-07-06T17:48:10.614+03:00  INFO 22523 --- [taco-cloud] [Thread-24] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-06T17:48:10.616+03:00  WARN 22523 --- [taco-cloud] [Thread-24] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-240]
+2026-07-06T17:48:10.616+03:00  INFO 22523 --- [taco-cloud] [Thread-24] com.zaxxer.hikari.HikariDataSource       : tacocloud - Shutdown initiated...
+2026-07-06T17:48:10.616+03:00  INFO 22523 --- [taco-cloud] [Thread-24] com.zaxxer.hikari.HikariDataSource       : tacocloud - Shutdown completed.
+2026-07-06T17:48:10.658+03:00  INFO 22523 --- [taco-cloud] [restartedMain] c.f.tacocloud.TacoCloudApplication       : Starting TacoCloudApplication using Java 26.0.1 with PID 22523 (/Users/floydrise/Documents/Programming/Taco Cloud/taco-cloud/target/classes started by floydrise in /Users/floydrise/Documents/Programming/Taco Cloud/taco-cloud)
+2026-07-06T17:48:10.658+03:00  INFO 22523 --- [taco-cloud] [restartedMain] c.f.tacocloud.TacoCloudApplication       : No active profile set, falling back to 1 default profile: "default"
+2026-07-06T17:48:10.711+03:00  INFO 22523 --- [taco-cloud] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-06T17:48:10.715+03:00  INFO 22523 --- [taco-cloud] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 3 ms. Found 5 JPA repository interfaces.
+2026-07-06T17:48:10.753+03:00  INFO 22523 --- [taco-cloud] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-07-06T17:48:10.753+03:00  INFO 22523 --- [taco-cloud] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-07-06T17:48:10.753+03:00  INFO 22523 --- [taco-cloud] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-07-06T17:48:10.758+03:00  INFO 22523 --- [taco-cloud] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 99 ms
+2026-07-06T17:48:10.773+03:00  INFO 22523 --- [taco-cloud] [restartedMain] com.zaxxer.hikari.HikariDataSource       : tacocloud - Starting...
+2026-07-06T17:48:10.774+03:00  INFO 22523 --- [taco-cloud] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : tacocloud - Added connection conn55: url=jdbc:h2:mem:tacocloud user=SA
+2026-07-06T17:48:10.774+03:00  INFO 22523 --- [taco-cloud] [restartedMain] com.zaxxer.hikari.HikariDataSource       : tacocloud - Start completed.
+2026-07-06T17:48:10.774+03:00  INFO 22523 --- [taco-cloud] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-07-06T17:48:10.782+03:00  INFO 22523 --- [taco-cloud] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-06T17:48:10.782+03:00  INFO 22523 --- [taco-cloud] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:mem:tacocloud]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: TACOCLOUD/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-07-06T17:48:10.815+03:00  INFO 22523 --- [taco-cloud] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-06T17:48:10.818+03:00  INFO 22523 --- [taco-cloud] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-06T17:48:10.871+03:00  WARN 22523 --- [taco-cloud] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-06T17:48:10.891+03:00  INFO 22523 --- [taco-cloud] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2026-07-06T17:48:10.976+03:00  INFO 22523 --- [taco-cloud] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-07-06T17:48:10.977+03:00  INFO 22523 --- [taco-cloud] [restartedMain] c.f.tacocloud.TacoCloudApplication       : Started TacoCloudApplication in 0.327 seconds (process running for 88.674)
+2026-07-06T17:48:10.986+03:00  INFO 22523 --- [taco-cloud] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-07-06T17:48:48.580+03:00  INFO 22523 --- [taco-cloud] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat-2].[localhost].[/]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-07-06T17:48:48.581+03:00  INFO 22523 --- [taco-cloud] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-07-06T17:48:48.583+03:00  INFO 22523 --- [taco-cloud] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2026-07-06T17:48:48.588+03:00  WARN 22523 --- [taco-cloud] [http-nio-8080-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.data.rest.webmvc.ResourceNotFoundException: EntityRepresentationModel not found]
+2026-07-06T17:49:34.160+03:00  INFO 22523 --- [taco-cloud] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2026-07-06T17:49:34.163+03:00  INFO 22523 --- [taco-cloud] [Thread-28] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-07-06T17:49:34.166+03:00  INFO 22523 --- [taco-cloud] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-07-06T17:49:34.170+03:00  INFO 22523 --- [taco-cloud] [Thread-28] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-06T17:49:34.172+03:00  WARN 22523 --- [taco-cloud] [Thread-28] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-240]
+2026-07-06T17:49:34.173+03:00  INFO 22523 --- [taco-cloud] [Thread-28] com.zaxxer.hikari.HikariDataSource       : tacocloud - Shutdown initiated...
+2026-07-06T17:49:34.174+03:00  INFO 22523 --- [taco-cloud] [Thread-28] com.zaxxer.hikari.HikariDataSource       : tacocloud - Shutdown completed.
+2026-07-06T17:49:34.221+03:00  INFO 22523 --- [taco-cloud] [restartedMain] c.f.tacocloud.TacoCloudApplication       : Starting TacoCloudApplication using Java 26.0.1 with PID 22523 (/Users/floydrise/Documents/Programming/Taco Cloud/taco-cloud/target/classes started by floydrise in /Users/floydrise/Documents/Programming/Taco Cloud/taco-cloud)
+2026-07-06T17:49:34.221+03:00  INFO 22523 --- [taco-cloud] [restartedMain] c.f.tacocloud.TacoCloudApplication       : No active profile set, falling back to 1 default profile: "default"
+2026-07-06T17:49:34.273+03:00  INFO 22523 --- [taco-cloud] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-06T17:49:34.277+03:00  INFO 22523 --- [taco-cloud] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 3 ms. Found 5 JPA repository interfaces.
+2026-07-06T17:49:34.314+03:00  INFO 22523 --- [taco-cloud] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-07-06T17:49:34.314+03:00  INFO 22523 --- [taco-cloud] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-07-06T17:49:34.314+03:00  INFO 22523 --- [taco-cloud] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-07-06T17:49:34.318+03:00  INFO 22523 --- [taco-cloud] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 96 ms
+2026-07-06T17:49:34.334+03:00  INFO 22523 --- [taco-cloud] [restartedMain] com.zaxxer.hikari.HikariDataSource       : tacocloud - Starting...
+2026-07-06T17:49:34.335+03:00  INFO 22523 --- [taco-cloud] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : tacocloud - Added connection conn65: url=jdbc:h2:mem:tacocloud user=SA
+2026-07-06T17:49:34.335+03:00  INFO 22523 --- [taco-cloud] [restartedMain] com.zaxxer.hikari.HikariDataSource       : tacocloud - Start completed.
+2026-07-06T17:49:34.335+03:00  INFO 22523 --- [taco-cloud] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-07-06T17:49:34.344+03:00  INFO 22523 --- [taco-cloud] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-06T17:49:34.344+03:00  INFO 22523 --- [taco-cloud] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:mem:tacocloud]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: TACOCLOUD/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-07-06T17:49:34.376+03:00  INFO 22523 --- [taco-cloud] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-06T17:49:34.379+03:00  INFO 22523 --- [taco-cloud] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-06T17:49:34.462+03:00  WARN 22523 --- [taco-cloud] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-06T17:49:34.495+03:00  INFO 22523 --- [taco-cloud] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2026-07-06T17:49:34.583+03:00  INFO 22523 --- [taco-cloud] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-07-06T17:49:34.585+03:00  INFO 22523 --- [taco-cloud] [restartedMain] c.f.tacocloud.TacoCloudApplication       : Started TacoCloudApplication in 0.37 seconds (process running for 172.281)
+2026-07-06T17:49:34.594+03:00  INFO 22523 --- [taco-cloud] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-07-06T17:49:38.698+03:00  INFO 22523 --- [taco-cloud] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat-2].[localhost].[/]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-07-06T17:49:38.698+03:00  INFO 22523 --- [taco-cloud] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-07-06T17:49:38.700+03:00  INFO 22523 --- [taco-cloud] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-07-06T17:49:38.706+03:00  WARN 22523 --- [taco-cloud] [http-nio-8080-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.data.rest.webmvc.ResourceNotFoundException: EntityRepresentationModel not found]
+2026-07-06T17:50:45.641+03:00  INFO 22523 --- [taco-cloud] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2026-07-06T17:50:45.642+03:00  INFO 22523 --- [taco-cloud] [Thread-32] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-07-06T17:50:45.644+03:00  INFO 22523 --- [taco-cloud] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-07-06T17:50:45.645+03:00  INFO 22523 --- [taco-cloud] [Thread-32] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-06T17:50:45.647+03:00  WARN 22523 --- [taco-cloud] [Thread-32] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-240]
+2026-07-06T17:50:45.647+03:00  INFO 22523 --- [taco-cloud] [Thread-32] com.zaxxer.hikari.HikariDataSource       : tacocloud - Shutdown initiated...
+2026-07-06T17:50:45.647+03:00  INFO 22523 --- [taco-cloud] [Thread-32] com.zaxxer.hikari.HikariDataSource       : tacocloud - Shutdown completed.
+2026-07-06T17:50:45.690+03:00  INFO 22523 --- [taco-cloud] [restartedMain] c.f.tacocloud.TacoCloudApplication       : Starting TacoCloudApplication using Java 26.0.1 with PID 22523 (/Users/floydrise/Documents/Programming/Taco Cloud/taco-cloud/target/classes started by floydrise in /Users/floydrise/Documents/Programming/Taco Cloud/taco-cloud)
+2026-07-06T17:50:45.690+03:00  INFO 22523 --- [taco-cloud] [restartedMain] c.f.tacocloud.TacoCloudApplication       : No active profile set, falling back to 1 default profile: "default"
+2026-07-06T17:50:45.743+03:00  INFO 22523 --- [taco-cloud] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-06T17:50:45.748+03:00  INFO 22523 --- [taco-cloud] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 5 JPA repository interfaces.
+2026-07-06T17:50:45.786+03:00  INFO 22523 --- [taco-cloud] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-07-06T17:50:45.786+03:00  INFO 22523 --- [taco-cloud] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-07-06T17:50:45.786+03:00  INFO 22523 --- [taco-cloud] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-07-06T17:50:45.791+03:00  INFO 22523 --- [taco-cloud] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 100 ms
+2026-07-06T17:50:45.806+03:00  INFO 22523 --- [taco-cloud] [restartedMain] com.zaxxer.hikari.HikariDataSource       : tacocloud - Starting...
+2026-07-06T17:50:45.807+03:00  INFO 22523 --- [taco-cloud] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : tacocloud - Added connection conn75: url=jdbc:h2:mem:tacocloud user=SA
+2026-07-06T17:50:45.807+03:00  INFO 22523 --- [taco-cloud] [restartedMain] com.zaxxer.hikari.HikariDataSource       : tacocloud - Start completed.
+2026-07-06T17:50:45.807+03:00  INFO 22523 --- [taco-cloud] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-07-06T17:50:45.816+03:00  INFO 22523 --- [taco-cloud] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-06T17:50:45.817+03:00  INFO 22523 --- [taco-cloud] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:mem:tacocloud]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: TACOCLOUD/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-07-06T17:50:45.850+03:00  INFO 22523 --- [taco-cloud] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-06T17:50:45.853+03:00  INFO 22523 --- [taco-cloud] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-06T17:50:45.908+03:00  WARN 22523 --- [taco-cloud] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-06T17:50:45.928+03:00  INFO 22523 --- [taco-cloud] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2026-07-06T17:50:46.015+03:00  INFO 22523 --- [taco-cloud] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-07-06T17:50:46.016+03:00  INFO 22523 --- [taco-cloud] [restartedMain] c.f.tacocloud.TacoCloudApplication       : Started TacoCloudApplication in 0.333 seconds (process running for 243.712)
+2026-07-06T17:50:46.023+03:00  INFO 22523 --- [taco-cloud] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-07-06T17:51:20.546+03:00  INFO 22523 --- [taco-cloud] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat-2].[localhost].[/]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-07-06T17:51:20.547+03:00  INFO 22523 --- [taco-cloud] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-07-06T17:51:20.548+03:00  INFO 22523 --- [taco-cloud] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-07-06T17:51:20.553+03:00  WARN 22523 --- [taco-cloud] [http-nio-8080-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.data.rest.webmvc.ResourceNotFoundException: EntityRepresentationModel not found]
+2026-07-06T17:53:49.223+03:00  INFO 22523 --- [taco-cloud] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2026-07-06T17:53:49.224+03:00  INFO 22523 --- [taco-cloud] [Thread-36] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-07-06T17:53:49.226+03:00  INFO 22523 --- [taco-cloud] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-07-06T17:53:49.227+03:00  INFO 22523 --- [taco-cloud] [Thread-36] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-06T17:53:49.228+03:00  WARN 22523 --- [taco-cloud] [Thread-36] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-240]
+2026-07-06T17:53:49.228+03:00  INFO 22523 --- [taco-cloud] [Thread-36] com.zaxxer.hikari.HikariDataSource       : tacocloud - Shutdown initiated...
+2026-07-06T17:53:49.229+03:00  INFO 22523 --- [taco-cloud] [Thread-36] com.zaxxer.hikari.HikariDataSource       : tacocloud - Shutdown completed.
+2026-07-06T17:53:49.274+03:00  INFO 22523 --- [taco-cloud] [restartedMain] c.f.tacocloud.TacoCloudApplication       : Starting TacoCloudApplication using Java 26.0.1 with PID 22523 (/Users/floydrise/Documents/Programming/Taco Cloud/taco-cloud/target/classes started by floydrise in /Users/floydrise/Documents/Programming/Taco Cloud/taco-cloud)
+2026-07-06T17:53:49.274+03:00  INFO 22523 --- [taco-cloud] [restartedMain] c.f.tacocloud.TacoCloudApplication       : No active profile set, falling back to 1 default profile: "default"
+2026-07-06T17:53:49.333+03:00  INFO 22523 --- [taco-cloud] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-06T17:53:49.337+03:00  INFO 22523 --- [taco-cloud] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 3 ms. Found 5 JPA repository interfaces.
+2026-07-06T17:53:49.381+03:00  INFO 22523 --- [taco-cloud] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-07-06T17:53:49.382+03:00  INFO 22523 --- [taco-cloud] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-07-06T17:53:49.382+03:00  INFO 22523 --- [taco-cloud] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-07-06T17:53:49.386+03:00  INFO 22523 --- [taco-cloud] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 111 ms
+2026-07-06T17:53:49.403+03:00  INFO 22523 --- [taco-cloud] [restartedMain] com.zaxxer.hikari.HikariDataSource       : tacocloud - Starting...
+2026-07-06T17:53:49.404+03:00  INFO 22523 --- [taco-cloud] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : tacocloud - Added connection conn85: url=jdbc:h2:mem:tacocloud user=SA
+2026-07-06T17:53:49.404+03:00  INFO 22523 --- [taco-cloud] [restartedMain] com.zaxxer.hikari.HikariDataSource       : tacocloud - Start completed.
+2026-07-06T17:53:49.405+03:00  INFO 22523 --- [taco-cloud] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-07-06T17:53:49.414+03:00  INFO 22523 --- [taco-cloud] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-06T17:53:49.414+03:00  INFO 22523 --- [taco-cloud] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:mem:tacocloud]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: TACOCLOUD/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-07-06T17:53:49.446+03:00  INFO 22523 --- [taco-cloud] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-06T17:53:49.449+03:00  INFO 22523 --- [taco-cloud] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-06T17:53:49.512+03:00  WARN 22523 --- [taco-cloud] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-06T17:53:49.536+03:00  INFO 22523 --- [taco-cloud] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2026-07-06T17:53:49.636+03:00  INFO 22523 --- [taco-cloud] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-07-06T17:53:49.638+03:00  INFO 22523 --- [taco-cloud] [restartedMain] c.f.tacocloud.TacoCloudApplication       : Started TacoCloudApplication in 0.372 seconds (process running for 427.332)
+2026-07-06T17:53:49.655+03:00  INFO 22523 --- [taco-cloud] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-07-06T17:53:51.280+03:00  INFO 22523 --- [taco-cloud] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat-2].[localhost].[/]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-07-06T17:53:51.280+03:00  INFO 22523 --- [taco-cloud] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-07-06T17:53:51.281+03:00  INFO 22523 --- [taco-cloud] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-07-06T17:53:51.288+03:00  WARN 22523 --- [taco-cloud] [http-nio-8080-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.data.rest.webmvc.ResourceNotFoundException: EntityRepresentationModel not found]
+2026-07-06T17:54:05.178+03:00  WARN 22523 --- [taco-cloud] [http-nio-8080-exec-10] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.data.rest.webmvc.ResourceNotFoundException: EntityRepresentationModel not found]
+2026-07-06T17:54:09.987+03:00  INFO 22523 --- [taco-cloud] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-07-06T17:54:09.991+03:00  INFO 22523 --- [taco-cloud] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-07-06T17:54:09.994+03:00  INFO 22523 --- [taco-cloud] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-06T17:54:09.996+03:00  WARN 22523 --- [taco-cloud] [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-240]
+2026-07-06T17:54:09.996+03:00  INFO 22523 --- [taco-cloud] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : tacocloud - Shutdown initiated...
+2026-07-06T17:54:09.997+03:00  INFO 22523 --- [taco-cloud] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : tacocloud - Shutdown completed.
+2026-07-06T17:55:12.767+03:00  INFO 25486 --- [taco-cloud] [restartedMain] c.f.tacocloud.TacoCloudApplication       : Starting TacoCloudApplication using Java 26.0.1 with PID 25486 (/Users/floydrise/Documents/Programming/Taco Cloud/taco-cloud/target/classes started by floydrise in /Users/floydrise/Documents/Programming/Taco Cloud/taco-cloud)
+2026-07-06T17:55:12.768+03:00  INFO 25486 --- [taco-cloud] [restartedMain] c.f.tacocloud.TacoCloudApplication       : No active profile set, falling back to 1 default profile: "default"
+2026-07-06T17:55:12.788+03:00  INFO 25486 --- [taco-cloud] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-07-06T17:55:12.789+03:00  INFO 25486 --- [taco-cloud] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-07-06T17:55:13.087+03:00  INFO 25486 --- [taco-cloud] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-06T17:55:13.127+03:00  INFO 25486 --- [taco-cloud] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 36 ms. Found 5 JPA repository interfaces.
+2026-07-06T17:55:13.346+03:00  INFO 25486 --- [taco-cloud] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-07-06T17:55:13.351+03:00  INFO 25486 --- [taco-cloud] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-07-06T17:55:13.351+03:00  INFO 25486 --- [taco-cloud] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-07-06T17:55:13.364+03:00  INFO 25486 --- [taco-cloud] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 575 ms
+2026-07-06T17:55:13.433+03:00  INFO 25486 --- [taco-cloud] [restartedMain] com.zaxxer.hikari.HikariDataSource       : tacocloud - Starting...
+2026-07-06T17:55:13.511+03:00  INFO 25486 --- [taco-cloud] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : tacocloud - Added connection conn0: url=jdbc:h2:mem:tacocloud user=SA
+2026-07-06T17:55:13.512+03:00  INFO 25486 --- [taco-cloud] [restartedMain] com.zaxxer.hikari.HikariDataSource       : tacocloud - Start completed.
+2026-07-06T17:55:13.527+03:00  INFO 25486 --- [taco-cloud] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-07-06T17:55:13.551+03:00  INFO 25486 --- [taco-cloud] [restartedMain] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.4.1.Final
+2026-07-06T17:55:13.707+03:00  INFO 25486 --- [taco-cloud] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-06T17:55:13.744+03:00  INFO 25486 --- [taco-cloud] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:mem:tacocloud]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: TACOCLOUD/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-07-06T17:55:14.192+03:00  INFO 25486 --- [taco-cloud] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-06T17:55:14.215+03:00  INFO 25486 --- [taco-cloud] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-06T17:55:14.251+03:00  INFO 25486 --- [taco-cloud] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-07-06T17:55:14.461+03:00  WARN 25486 --- [taco-cloud] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-06T17:55:14.551+03:00  INFO 25486 --- [taco-cloud] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2026-07-06T17:55:14.805+03:00  INFO 25486 --- [taco-cloud] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-07-06T17:55:14.808+03:00  INFO 25486 --- [taco-cloud] [restartedMain] c.f.tacocloud.TacoCloudApplication       : Started TacoCloudApplication in 2.209 seconds (process running for 2.385)
+2026-07-06T17:55:18.613+03:00  INFO 25486 --- [taco-cloud] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-07-06T17:55:18.614+03:00  INFO 25486 --- [taco-cloud] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-07-06T17:55:18.615+03:00  INFO 25486 --- [taco-cloud] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-07-06T17:55:42.927+03:00  WARN 25486 --- [taco-cloud] [http-nio-8080-exec-9] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.data.rest.webmvc.ResourceNotFoundException: EntityRepresentationModel not found]
+2026-07-06T17:55:44.455+03:00  INFO 25486 --- [taco-cloud] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-07-06T17:55:44.460+03:00  INFO 25486 --- [taco-cloud] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-07-06T17:55:44.466+03:00  INFO 25486 --- [taco-cloud] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-06T17:55:44.472+03:00  WARN 25486 --- [taco-cloud] [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-240]
+2026-07-06T17:55:44.473+03:00  INFO 25486 --- [taco-cloud] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : tacocloud - Shutdown initiated...
+2026-07-06T17:55:44.474+03:00  INFO 25486 --- [taco-cloud] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : tacocloud - Shutdown completed.
